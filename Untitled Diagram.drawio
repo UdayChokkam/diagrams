@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-05-04T10:57:09.098Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15" etag="rPa5lfvEKh5KE4tCCahA" version="14.6.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-04T10:59:33.124Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15" etag="iU7nPgw1bCAJ78KA2TcU" version="14.6.9" type="github">
   <diagram id="JY1vmuGkY0P2LUi2-qNI" name="Page-1">
     <mxGraphModel dx="1426" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -106,28 +106,39 @@
         <mxCell id="w1QsJmdibLaZv8pq3Ymb-45" value="Inserts &amp;nbsp;a record in dynamo db table data_pipeline_metadata&lt;br&gt;Correlation_Id &amp;nbsp;- generated ,&lt;br&gt;Status - Pending,&lt;br&gt;DataProduct - SITE_DIM&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="465" y="638" width="330" height="64.5" as="geometry" />
         </mxCell>
-        <mxCell id="w1QsJmdibLaZv8pq3Ymb-48" value="" style="endArrow=none;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="w1QsJmdibLaZv8pq3Ymb-18">
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-48" value="" style="endArrow=none;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="w1QsJmdibLaZv8pq3Ymb-18" target="w1QsJmdibLaZv8pq3Ymb-52">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="390" y="390" as="sourcePoint" />
             <mxPoint x="690" y="206" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="w1QsJmdibLaZv8pq3Ymb-51" value="optionally" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="640" y="180" width="40" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="w1QsJmdibLaZv8pq3Ymb-52" value="Concourse job to discard the dynamo db pending record to ignore the previous pending update and &amp;nbsp;force the new one&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="687" y="164" width="140" height="84" as="geometry" />
-        </mxCell>
-        <mxCell id="w1QsJmdibLaZv8pq3Ymb-56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="w1QsJmdibLaZv8pq3Ymb-55" target="w1QsJmdibLaZv8pq3Ymb-26">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="w1QsJmdibLaZv8pq3Ymb-57" value="&amp;lt;&amp;lt;optional&amp;gt;&amp;gt;&lt;br&gt;Manual trigger" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="w1QsJmdibLaZv8pq3Ymb-56">
-          <mxGeometry x="-0.1509" y="-1" relative="1" as="geometry">
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-64" value="&lt;i&gt;Optional&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="w1QsJmdibLaZv8pq3Ymb-48">
+          <mxGeometry x="-0.1786" y="2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-52" value="Concourse job to discard the dynamo db pending record to ignore the previous pending update and &amp;nbsp;force the new one&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="164" width="140" height="84" as="geometry" />
+        </mxCell>
         <mxCell id="w1QsJmdibLaZv8pq3Ymb-55" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="155" y="20" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-58" value="" style="endArrow=none;dashed=1;html=1;" edge="1" parent="1" source="w1QsJmdibLaZv8pq3Ymb-55">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="380" as="sourcePoint" />
+            <mxPoint x="170" y="180" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-61" value="Manual trigger" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="w1QsJmdibLaZv8pq3Ymb-58">
+          <mxGeometry x="0.48" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-63" value="&lt;i&gt;Optional&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="w1QsJmdibLaZv8pq3Ymb-58">
+          <mxGeometry x="-0.24" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
