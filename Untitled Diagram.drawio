@@ -1,1 +1,135 @@
-<mxfile host="app.diagrams.net" modified="2021-05-04T10:08:31.533Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15" version="14.6.9" etag="cBAapTbc1tjopDMFq-Ox" type="github"><diagram id="JY1vmuGkY0P2LUi2-qNI">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-05-04T10:57:09.098Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15" etag="rPa5lfvEKh5KE4tCCahA" version="14.6.9" type="github">
+  <diagram id="JY1vmuGkY0P2LUi2-qNI" name="Page-1">
+    <mxGraphModel dx="1426" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="w1QsJmdibLaZv8pq3Ymb-1" target="w1QsJmdibLaZv8pq3Ymb-26">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="80" y="206" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-24" value="On merge to master&lt;br&gt;triggers concourse job" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="w1QsJmdibLaZv8pq3Ymb-13">
+          <mxGeometry x="-0.6059" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-1" value="[Git Enterprise]&lt;br&gt;dataworks-aws-reference-data" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="7" y="316" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="w1QsJmdibLaZv8pq3Ymb-3" target="w1QsJmdibLaZv8pq3Ymb-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="92" y="593" />
+              <mxPoint x="92" y="383" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-3" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="77" y="523" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-7" value="&lt;div style=&quot;text-align: justify&quot;&gt;1. Uploads &amp;nbsp;&lt;b&gt;site_data.xlsx&lt;/b&gt; to the&lt;/div&gt;&lt;div style=&quot;text-align: justify&quot;&gt;data directory of the above repo&lt;/div&gt;&lt;div style=&quot;text-align: justify&quot;&gt;overwriting the existing one if any&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: justify&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify&quot;&gt;2. Raises a PR to merge into master&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="90" y="426" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="w1QsJmdibLaZv8pq3Ymb-12" target="w1QsJmdibLaZv8pq3Ymb-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-12" value="s3://config_bucket/component/uc_repos/dataworks-aws-reference-data" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="523" width="380" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-16" value="Exit" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="554" y="96" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="w1QsJmdibLaZv8pq3Ymb-18" target="w1QsJmdibLaZv8pq3Ymb-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-34" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="w1QsJmdibLaZv8pq3Ymb-32">
+          <mxGeometry x="-0.04" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="w1QsJmdibLaZv8pq3Ymb-18" target="w1QsJmdibLaZv8pq3Ymb-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-35" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="w1QsJmdibLaZv8pq3Ymb-33">
+          <mxGeometry x="-0.4" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-18" value="pending&lt;br&gt;update already?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="554" y="166" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="w1QsJmdibLaZv8pq3Ymb-26" target="w1QsJmdibLaZv8pq3Ymb-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-30" value="scans" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="w1QsJmdibLaZv8pq3Ymb-29">
+          <mxGeometry x="-0.2424" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-26" value="Concourse" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="186" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="w1QsJmdibLaZv8pq3Ymb-27" target="w1QsJmdibLaZv8pq3Ymb-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-27" value="dynamo db&amp;nbsp;table &lt;br&gt;data_pipeline_metadada" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="186" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="w1QsJmdibLaZv8pq3Ymb-36" target="w1QsJmdibLaZv8pq3Ymb-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-41" value="Converts" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="w1QsJmdibLaZv8pq3Ymb-39">
+          <mxGeometry x="-0.12" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-36" value="Generates correlation_id" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="534" y="306" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-40" value="Synchronises to&amp;nbsp;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="w1QsJmdibLaZv8pq3Ymb-38" target="w1QsJmdibLaZv8pq3Ymb-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="594" y="506" />
+              <mxPoint x="594" y="506" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-38" value="&amp;nbsp;xlsx to csv" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="534" y="406" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-44" value="&lt;b&gt;Important Note :&amp;nbsp;&lt;/b&gt;&lt;br&gt;&amp;nbsp;Name of the spread sheet should be &lt;b&gt;site_data.xlsx&lt;br&gt;&lt;/b&gt;" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="523" width="163" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-45" value="Inserts &amp;nbsp;a record in dynamo db table data_pipeline_metadata&lt;br&gt;Correlation_Id &amp;nbsp;- generated ,&lt;br&gt;Status - Pending,&lt;br&gt;DataProduct - SITE_DIM&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="465" y="638" width="330" height="64.5" as="geometry" />
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-48" value="" style="endArrow=none;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="w1QsJmdibLaZv8pq3Ymb-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="390" as="sourcePoint" />
+            <mxPoint x="690" y="206" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-51" value="optionally" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="180" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-52" value="Concourse job to discard the dynamo db pending record to ignore the previous pending update and &amp;nbsp;force the new one&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="687" y="164" width="140" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="w1QsJmdibLaZv8pq3Ymb-55" target="w1QsJmdibLaZv8pq3Ymb-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-57" value="&amp;lt;&amp;lt;optional&amp;gt;&amp;gt;&lt;br&gt;Manual trigger" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="w1QsJmdibLaZv8pq3Ymb-56">
+          <mxGeometry x="-0.1509" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w1QsJmdibLaZv8pq3Ymb-55" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="155" y="20" width="30" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
